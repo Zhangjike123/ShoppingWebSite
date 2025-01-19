@@ -390,10 +390,36 @@ footer {
     transform: scale(1.05);  /* Slightly enlarge the item when hovered */
 }
 
+.adv {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    text-align: center;
+    display: inline-block; /* Makes the background wrap around the text */
+    background-color: rgba(255, 87, 51, 0.7); /* Semi-transparent background */
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 5px 10px; /* Padding around the text to give it some space */
+    animation: flash 1s ease-in-out infinite;
+}
+
+/* Blink animation */
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* Testimonial Text */
 .testimonial-text {
     font-size: 1.2rem;
-    color: #f30a0a;  /* Slightly lighter color for the testimonial text */
+    color: hsl(0, 21%, 95%);  /* Slightly lighter color for the testimonial text */
     margin-top: 10px;
     font-style: italic;  /* Italic style for emphasis */
     margin-bottom: 15px;  /* Space between text and customer name */
@@ -413,4 +439,43 @@ footer {
     object-fit: cover;  /* Ensure the image fills the container without distortion */
     border-radius: 50%;  /* Round the image for a circular shape */
     margin-bottom: 10px;  /* Space between image and text */
+}
+
+
+.product-features {
+    padding: 20px;
+    background-color: hsl(232, 79%, 26%);
+}
+
+.product-features .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ebbe09;
+    padding: 10px;
+    text-align: left;
+}
+
+.comparison-table th {
+    background-color: #891e1e;
+    font-weight: bold;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f5f0ee;
 }
