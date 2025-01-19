@@ -477,5 +477,5 @@ footer {
 }
 
 .comparison-table tbody tr:nth-child(even) {
-    background-color: #f5f0ee;
+    background-color: hsl(109, 72%, 40%);
 }
